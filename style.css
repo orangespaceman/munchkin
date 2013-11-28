@@ -1,0 +1,104 @@
+body {
+    font-family:Georgia, sans-serif;
+    background:#444;
+    color:#eee;
+}
+
+h1, h2 {
+    font-weight:normal;
+    text-align:center;
+}
+
+
+/* add player */
+    .add-player {
+        position:absolute;
+        right:10px;
+        top:20px;
+        margin:0;
+    }
+
+    .add-player a {
+        background:#0bb;
+        color:#fff;
+        text-decoration:none;
+        padding:0.5em 1em;
+    }
+
+    .add-player a:hover {
+        background:#fff;
+        color:#0bb;
+    }
+
+
+/* player */
+    .players {
+        display:inline-block;
+    }
+
+    .player {
+        position:relative;
+        display:inline-block;
+        width:300px;
+        padding:10px;
+        margin:10px;
+        border-radius:10px;
+        background:#fff;
+        color:#444;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+    }
+
+    /* player - remove */
+        .player--remove {
+            position:absolute;
+            top:5px;
+            right:10px;
+            margin:0;
+        }
+
+        .player--remove a {
+            text-decoration:none;
+            color:#444;
+        }
+
+        .player--remove a:hover {
+            color:#f90;
+        }
+
+    /* player - stat */
+        .player--stats {
+            text-align:center;
+        }
+
+        .player--stat {
+            width:30%;
+            display:inline-block;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .stat-value {
+            font-size:1.5em;
+            font-weight:bold;
+        }
+
+        .stat-title {
+            font-size:0.8em;
+        }
+
+        .player--stat__strength {
+            color:#000;
+            font-size:1.2em;
+        }
+
+        .player--stat .arrow {
+            font-size:0.75em;
+            display:inline-block;
+            padding:0 0.25em;
+            cursor:pointer;
+        }
+
+        .player--stat .arrow:hover {
+            color:#f90;
+        }
