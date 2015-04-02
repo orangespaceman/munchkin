@@ -36,6 +36,9 @@
             var $newPlayerEl = $(playerTemplate).hide();
             var strength = 1;
 
+            $newPlayerEl.find(".player--image").attr("src",
+                $newPlayerEl.find(".player--image").attr("src")  + "?" + new Date().getTime());
+
             $newPlayerEl.find(".player--name").text(playerName);
             $newPlayerEl.appendTo($playersEl).fadeIn();
             $newPlayerEl.find(".player--remove").on("click", {el:$newPlayerEl}, removePlayer);

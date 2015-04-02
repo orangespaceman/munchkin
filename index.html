@@ -14,28 +14,32 @@
 
     <script type="text/template" id="player-template">
         <div class="player">
-            <p class="player--remove"><a href="#">&times;</a></p>
-            <h2 class="player--name">{name}</h2>
-            <img src="http://lorempixel.com/300/200/animals/" alt="">
-            <div class="player--stats">
-                <div class="player--stat player--stat__level">
-                    <p class="stat-value stat-value--editable"><span>1</span></p>
-                    <p class="stat-title">Level</p>
+            <div class="player--inner">
+                <p class="player--remove"><a href="#">&times;</a></p>
+                <h2 class="player--name">{name}</h2>
+                <img class="player--image" src="http://lorempixel.com/300/200/animals/" alt="">
+                <div class="player--stats">
+                    <div class="player--stat player--stat__level">
+                        <p class="stat-value stat-value--editable"><span>1</span></p>
+                        <p class="stat-title">Level</p>
+                    </div>
+                    <div class="player--stat player--stat__strength">
+                        <p class="stat-value">1</p>
+                        <p class="stat-title">Strength</p>
+                    </div>
+                    <div class="player--stat player--stat__gear">
+                        <p class="stat-value stat-value--editable"><span>0</span></p>
+                        <p class="stat-title">Gear</p>
+                    </div>
                 </div>
-                <div class="player--stat player--stat__strength">
-                    <p class="stat-value">1</p>
-                    <p class="stat-title">Strength</p>
-                </div>
-                <div class="player--stat player--stat__gear">
-                    <p class="stat-value stat-value--editable"><span>0</span></p>
-                    <p class="stat-title">Gear</p>
-                </div>
-            </div>
+            </script>
         </div>
     </script>
 
     <script src="jquery-1.10.2.min.js"></script>
     <script src="script.js"></script>
+
+    <script src="http://thegingerbloke.github.io/lab-badge/lab-badge.min.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
     font-family:Georgia, sans-serif;
     background:#444;
@@ -33,20 +40,33 @@ h1, h2 {
 
 /* player */
     .players {
-        display:inline-block;
+
     }
 
     .player {
-        position:relative;
         display:inline-block;
-        width:300px;
-        padding:10px;
-        margin:10px;
-        border-radius:10px;
-        background:#fff;
-        color:#444;
-        box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+        width: 100%;
+        margin:10px 0;
     }
+
+    @media (min-width:580px) { .player { width:50%; } }
+    @media (min-width:850px) { .player { width:33%; } }
+    @media (min-width:1150px) { .player { width:25%; } }
+    @media (min-width:1400px) { .player { width:20%; } }
+
+        .player--inner {
+            position:relative;
+            margin: 0 10px;
+            padding:10px;
+            border-radius:10px;
+            background:#fff;
+            color:#444;
+            box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+        }
+
+        .player--image {
+            width: 100%;
+        }
 
     /* player - remove */
         .player--remove {
